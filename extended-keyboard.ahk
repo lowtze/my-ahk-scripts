@@ -51,6 +51,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !2::sendRaw ²
 !3::sendRaw ³
 
+
 ;Math operators
 !x::sendRaw ×
 !/::sendRaw ÷
