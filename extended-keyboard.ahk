@@ -91,3 +91,31 @@ Alt & MButton::Volume_Mute
 ;Hotstrings
 ::]test::This is a test of this shortcut.
 ::resumee::résumé
+
+
+;Post current time
+::]d::  ; This hotstring replaces "\d" with the current date and time via the commands below.
+FormatTime, CurrentDateTime,, d-MMM-y
+SendInput %CurrentDateTime%
+return
+
+
+;Long date version
+::]dd::  ; This hotstring replaces "\d" with the current date and time via the commands below.
+FormatTime, CurrentDateTime,, d MMMM yyyy hh:mm
+SendInput %CurrentDateTime%
+return
+
+
+;Filemaker Date Format
+::]-d::  ; This hotstring replaces "\d" with the current date and time via the commands below.
+FormatTime, CurrentDateTime,, M-dd-yy
+SendInput %CurrentDateTime%
+return
+
+
+;Obsidian Date Format
+::]od::  ; This hotstring replaces "\d" with the current date and time via the commands below.
+FormatTime, CurrentDateTime,, yyyy-MM-dd
+SendInput %CurrentDateTime%
+return
